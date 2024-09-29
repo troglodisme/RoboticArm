@@ -11,18 +11,19 @@ import SwiftUI
 
 struct ImmersiveRobotArmView: View {
     
-    @State private var scene: Entity? // Store the scene entity here
-    
+    @State private var scene: Entity?
+        
     var body: some View {
         
         VStack{
             HStack{
-                Button("Move Arm 1") {
+                Button("Rotate Arm 1") {
                     print("Move Arm 1 button pressed")
                     
                     if let arm1 = scene?.findEntity(named: "Arm1") {
                         rotateArm1(arm1)
                     }
+                        
                 }
                 
                 Button("Move Arm 2") {
@@ -33,6 +34,15 @@ struct ImmersiveRobotArmView: View {
                     }
                 }
                 
+                Button("Move Arm 2 Back") {
+                    print("Move Arm 2 Back button pressed")
+                    
+                    if let arm2 = scene?.findEntity(named: "Arm2") {
+                        rotateArm2Inverse(arm2)
+                    }
+                }
+                
+ 
                 Button("Move Arm 3") {
                     print("Move Arm 3 button pressed")
                     
@@ -41,54 +51,103 @@ struct ImmersiveRobotArmView: View {
                     }
                 }
                 
+                Button("Move Arm 3 Back") {
+                    print("Move Arm 2 Back button pressed")
+                    
+                    if let arm3 = scene?.findEntity(named: "Arm3") {
+                        rotateArm2Inverse(arm3)
+                    }
+                }
+                
+                
+                // New button to control both Arm 7A and 7B together
+                Button("Opemn Arms 7A & 7B") {
+                    print("Open Arms 7A & 7B button pressed")
+                    
+                    if let arm7A = scene?.findEntity(named: "Arm7A"), let arm7B = scene?.findEntity(named: "Arm7B") {
+                        openArms7Aand7B(arm7A: arm7A, arm7B: arm7B)
+                    }
+                }
+                
+                Button("Close Arms 7A & 7B") {
+                    print("Close Arms 7A & 7B button pressed")
+                    
+                    if let arm7A = scene?.findEntity(named: "Arm7A"), let arm7B = scene?.findEntity(named: "Arm7B") {
+                        closeArms7Aand7B(arm7A: arm7A, arm7B: arm7B)
+                    }
+                }
+                
             }
             
-            
-            RealityView { content in
+            RealityView { content, attachements in
                 if let loadedScene = try? await Entity(named: "RoboticArm0_1", in: realityKitContentBundle) {
                     loadedScene.transform.translation = [0, 0, -2] // Place 2 meters in front of the viewer
                     content.add(loadedScene)
                     print("Loaded Scene")
                     
-                    // Store the scene in the @State variable
                     scene = loadedScene
-                    
-                    // Perform rotation after a delay (3 seconds in this example)
-//                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-//                        if let arm1 = loadedScene.findEntity(named: "Arm1") {
-//                            rotateArm1(arm1)
-//                        }
-//                    }
+                }
+            }attachments: {
+                Attachment(id: "progMove") {
+                    Text("Test")
+                        .padding(20)
+                        .glassBackgroundEffect()
                 }
             }
+            
         }
     }
     
     // Helper function to apply rotation to Arm1
     func rotateArm1(_ arm1: Entity) {
-        // Rotate Arm1 90 degrees around the X-axis
         let rotation = simd_quatf(angle: .pi / 4, axis: [0, 0, 1]) // 90 degrees in radians
-        arm1.move(to: Transform(rotation: rotation), relativeTo: arm1, duration: 2.0) // 2 seconds animation
+        arm1.move(to: Transform(rotation: rotation), relativeTo: arm1, duration: 2.0)
     }
     
     func rotateArm2(_ arm2: Entity) {
-        // Rotate Arm1 90 degrees around the X-axis
         let rotation = simd_quatf(angle: .pi / 8, axis: [0, 1, 0]) // 90 degrees in radians
-        arm2.move(to: Transform(rotation: rotation), relativeTo: arm2, duration: 1.0) // 2 seconds animation
+        arm2.move(to: Transform(rotation: rotation), relativeTo: arm2, duration: 1.0)
     }
+    
+    func rotateArm2Inverse(_ arm2: Entity) {
+        let rotation = simd_quatf(angle: -.pi / 8, axis: [0, 1, 0]) // 90 degrees in radians
+        arm2.move(to: Transform(rotation: rotation), relativeTo: arm2, duration: 1.0)
+    }
+    
     
     func rotateArm3(_ arm3: Entity) {
-        // Rotate Arm1 90 degrees around the X-axis
         let rotation = simd_quatf(angle: .pi / 8, axis: [0, 1, 0]) // 90 degrees in radians
-        arm3.move(to: Transform(rotation: rotation), relativeTo: arm3, duration: 1.0) // 2 seconds animation
+        arm3.move(to: Transform(rotation: rotation), relativeTo: arm3, duration: 0.6)
     }
     
     
+    func rotateArm3Inverse(_ arm3: Entity) {
+        let rotation = simd_quatf(angle: -.pi / 8, axis: [0, 1, 0]) // 90 degrees in radians
+        arm3.move(to: Transform(rotation: rotation), relativeTo: arm3, duration: 0.6)
+    }
+        
+    
+    func openArms7Aand7B(arm7A: Entity, arm7B: Entity) {
+        let rotationA = simd_quatf(angle: .pi / 16, axis: [0, 0, 1])
+        let rotationB = simd_quatf(angle: -.pi / 16, axis: [0, 0, 1])
+        
+        arm7A.move(to: Transform(rotation: rotationA), relativeTo: arm7A, duration: 0.2)
+        arm7B.move(to: Transform(rotation: rotationB), relativeTo: arm7B, duration: 0.2)
+    }
+    
+    func closeArms7Aand7B(arm7A: Entity, arm7B: Entity) {
+        let rotationA = simd_quatf(angle: -.pi / 16, axis: [0, 0, 1])
+        let rotationB = simd_quatf(angle: .pi / 16, axis: [0, 0, 1])
+        
+        arm7A.move(to: Transform(rotation: rotationA), relativeTo: arm7A, duration: 0.2)
+        arm7B.move(to: Transform(rotation: rotationB), relativeTo: arm7B, duration: 0.2)
+    }
 }
 
 #Preview {
     ImmersiveRobotArmView()
 }
+
 
 
 
