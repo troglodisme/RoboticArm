@@ -7,11 +7,23 @@
 
 import SwiftUI
 
+
 @main
-struct RoboticArmApp: App {
+struct RobotArmControllerApp: App {
+
     var body: some Scene {
-        WindowGroup {
+        WindowGroup() {
             ContentView()
         }
+        .defaultSize(CGSize(width: 300, height: 400))
+
+
+        // Definition of the Immersive Space.
+        ImmersiveSpace(id: "MyImmersiveSpaceID") {
+            ImmersiveRobotArmView()
+        }
     }
+    
 }
+
+
