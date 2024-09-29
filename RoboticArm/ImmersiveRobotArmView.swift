@@ -16,61 +16,89 @@ struct ImmersiveRobotArmView: View {
     var body: some View {
         
         VStack{
+            
             HStack{
-                Button("Rotate Arm 1") {
-                    print("Move Arm 1 button pressed")
+                VStack{
+                    Text("ARM 1")
+                        .font(.largeTitle)
                     
-                    if let arm1 = scene?.findEntity(named: "Arm1") {
-                        rotateArm1(arm1)
+                    Button {
+                        if let arm1 = scene?.findEntity(named: "Arm1") {
+                            rotateArm1(arm1)
+                        }
+                    } label: {
+                        Image(systemName: "arrow.clockwise")
+                            .padding(20)
                     }
-                        
+                    
+                    Button {
+                        if let arm1 = scene?.findEntity(named: "Arm1") {
+                            rotateArm1Inverse(arm1)
+                        }
+                    } label: {
+                        Image(systemName: "arrow.counterclockwise")
+                            .padding(20)
+                    }
+                    
                 }
                 
-                Button("Move Arm 2") {
-                    print("Move Arm 2 button pressed")
+                VStack{
+                    Text("ARM 2")
+                        .font(.largeTitle)
                     
-                    if let arm2 = scene?.findEntity(named: "Arm2") {
-                        rotateArm2(arm2)
+                    Button {
+                        if let arm2 = scene?.findEntity(named: "Arm2") {
+                            rotateArm2(arm2)
+                        }
+                    } label: {
+                        Image(systemName: "arrow.clockwise")
+                            .padding(20)
+                    }
+                    
+                    Button {
+                        if let arm2 = scene?.findEntity(named: "Arm2") {
+                            rotateArm2Inverse(arm2)
+                        }
+                    } label: {
+                        Image(systemName: "arrow.counterclockwise")
+                            .padding(20)
                     }
                 }
                 
-                Button("Move Arm 2 Back") {
-                    print("Move Arm 2 Back button pressed")
+                VStack{
+                    Text("ARM 3")
+                        .font(.largeTitle)
                     
-                    if let arm2 = scene?.findEntity(named: "Arm2") {
-                        rotateArm2Inverse(arm2)
+                    Button {
+                        if let arm3 = scene?.findEntity(named: "Arm3") {
+                            rotateArm3(arm3)
+                        }
+                    } label: {
+                        Image(systemName: "arrow.clockwise")
+                            .padding(20)
+                    }
+                    
+                    Button {
+                        if let arm3 = scene?.findEntity(named: "Arm3") {
+                            rotateArm2Inverse(arm3)
+                        }
+                    } label: {
+                        Image(systemName: "arrow.counterclockwise")
+                            .padding(20)
                     }
                 }
                 
- 
-                Button("Move Arm 3") {
-                    print("Move Arm 3 button pressed")
-                    
-                    if let arm3 = scene?.findEntity(named: "Arm3") {
-                        rotateArm3(arm3)
-                    }
-                }
-                
-                Button("Move Arm 3 Back") {
-                    print("Move Arm 2 Back button pressed")
-                    
-                    if let arm3 = scene?.findEntity(named: "Arm3") {
-                        rotateArm2Inverse(arm3)
-                    }
-                }
                 
                 
                 // New button to control both Arm 7A and 7B together
-                Button("Opemn Arms 7A & 7B") {
-                    print("Open Arms 7A & 7B button pressed")
+                Button("Open Claws") {
                     
                     if let arm7A = scene?.findEntity(named: "Arm7A"), let arm7B = scene?.findEntity(named: "Arm7B") {
                         openArms7Aand7B(arm7A: arm7A, arm7B: arm7B)
                     }
                 }
                 
-                Button("Close Arms 7A & 7B") {
-                    print("Close Arms 7A & 7B button pressed")
+                Button("Close Claws") {
                     
                     if let arm7A = scene?.findEntity(named: "Arm7A"), let arm7B = scene?.findEntity(named: "Arm7B") {
                         closeArms7Aand7B(arm7A: arm7A, arm7B: arm7B)
@@ -78,6 +106,10 @@ struct ImmersiveRobotArmView: View {
                 }
                 
             }
+            .padding(60)
+            .background(Color.black)
+            .cornerRadius(20)
+            
             
             RealityView { content, attachements in
                 if let loadedScene = try? await Entity(named: "RoboticArm0_1", in: realityKitContentBundle) {
@@ -101,6 +133,11 @@ struct ImmersiveRobotArmView: View {
     // Helper function to apply rotation to Arm1
     func rotateArm1(_ arm1: Entity) {
         let rotation = simd_quatf(angle: .pi / 4, axis: [0, 0, 1]) // 90 degrees in radians
+        arm1.move(to: Transform(rotation: rotation), relativeTo: arm1, duration: 2.0)
+    }
+    
+    func rotateArm1Inverse(_ arm1: Entity) {
+        let rotation = simd_quatf(angle: -.pi / 4, axis: [0, 0, 1]) // 90 degrees in radians
         arm1.move(to: Transform(rotation: rotation), relativeTo: arm1, duration: 2.0)
     }
     

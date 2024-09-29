@@ -3,8 +3,7 @@
     "objectMetadataList" : [
       [
         "0A9B4653-B11E-4D6A-850E-C6FCB621626C",
-        "Root",
-        "GridMaterial"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -21,7 +20,8 @@
       },
       [
         "0A9B4653-B11E-4D6A-850E-C6FCB621626C",
-        "Root"
+        "Root",
+        "GridMaterial"
       ],
       {
         "isExpanded" : true,
@@ -44,9 +44,215 @@
       [
         "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
         "Root",
+        "RoboticArm1",
+        "Base",
+        "Arm1",
+        "Arm2",
+        "Arm3"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "Scene",
+        "Base",
+        "Arm1",
+        "Arm2"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "RAG_SM_Main_RobotArm_v01",
+        "Base"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "RoboticArm0_1",
+        "Base",
+        "Arm1",
+        "Arm2",
+        "Arm3"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "RoboticArm0_1",
+        "Base"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "Scene",
+        "Base",
+        "Arm1",
+        "Arm2",
+        "Arm3",
+        "Arm4",
+        "Arm5",
+        "Arm6"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "Scene",
+        "Base",
+        "Arm1",
+        "Arm2",
+        "Arm3"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
         "RAG_SM_Main_RobotArm_v01",
         "Base",
+        "Arm1",
+        "Arm2",
+        "Arm3",
+        "Arm4",
+        "Arm5",
+        "Arm6"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "Scene",
+        "Base",
         "Arm1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "Scene",
+        "Base",
+        "Arm1",
+        "Arm2",
+        "Arm3",
+        "Arm4",
+        "Arm5",
+        "Arm6",
+        "Arm7A"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "RoboticArm1",
+        "Base",
+        "Arm1",
+        "Arm2",
+        "Arm3",
+        "Arm4"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "RoboticArm1",
+        "Base",
+        "Arm1",
+        "Arm2",
+        "Arm3",
+        "Arm4",
+        "Arm5",
+        "Arm6"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "RoboticArm0_1",
+        "Base",
+        "Arm1",
+        "Arm2",
+        "Arm3",
+        "Arm4"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "Scene",
+        "Base",
+        "Arm1",
+        "Arm2",
+        "Arm3",
+        "Arm4",
+        "Arm5"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "RoboticArm1",
+        "Base",
+        "Arm1",
+        "Arm2",
+        "Arm3",
+        "Arm4",
+        "Arm5"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "RAG_SM_Main_RobotArm_v01",
+        "Base",
+        "Arm1",
+        "Arm2"
       ],
       {
         "isExpanded" : true,
@@ -72,43 +278,8 @@
       [
         "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
         "Root",
-        "RAG_SM_Main_RobotArm_v01",
-        "Base",
-        "Arm1",
-        "Arm2",
-        "Arm3",
-        "Arm4",
-        "Arm5",
-        "Arm6"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "RoboticArm1",
-        "Base",
-        "Arm1",
-        "Arm2",
-        "Arm3"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
         "Scene",
-        "Base",
-        "Arm1",
-        "Arm2",
-        "Arm3",
-        "Arm4",
-        "Arm5",
-        "Arm6"
+        "Base"
       ],
       {
         "isExpanded" : true,
@@ -118,43 +289,6 @@
         "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
         "Root",
         "RAG_SM_Main_RobotArm_v01",
-        "Base",
-        "Arm1",
-        "Arm2",
-        "Arm3",
-        "Arm4"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "RAG_SM_Main_RobotArm_v01",
-        "Base",
-        "Arm1",
-        "Arm2",
-        "Arm3",
-        "Arm4",
-        "Arm5"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "RoboticArm1",
         "Base",
         "Arm1"
       ],
@@ -165,23 +299,13 @@
       [
         "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
         "Root",
-        "Scene",
+        "RAG_SM_Main_RobotArm_v01",
         "Base",
         "Arm1",
         "Arm2",
         "Arm3",
         "Arm4",
         "Arm5"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "RoboticArm0_1",
-        "Base"
       ],
       {
         "isExpanded" : true,
@@ -199,10 +323,29 @@
       [
         "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
         "Root",
+        "RoboticArm1",
+        "Base"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
         "RAG_SM_Main_RobotArm_v01",
         "Base",
         "Arm1",
-        "Arm2"
+        "Arm2",
+        "Arm3"
       ],
       {
         "isExpanded" : true,
@@ -213,12 +356,7 @@
         "Root",
         "RoboticArm1",
         "Base",
-        "Arm1",
-        "Arm2",
-        "Arm3",
-        "Arm4",
-        "Arm5",
-        "Arm6"
+        "Arm1"
       ],
       {
         "isExpanded" : true,
@@ -238,71 +376,7 @@
       [
         "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
         "Root",
-        "RAG_SM_Main_RobotArm_v01",
-        "Base",
-        "Arm1",
-        "Arm2",
-        "Arm3"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "Scene",
-        "Base",
-        "Arm1",
-        "Arm2",
-        "Arm3"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "RAG_SM_Main_RobotArm_v01",
-        "Base",
-        "Arm1",
-        "Arm2",
-        "Arm3",
-        "Arm4",
-        "Arm5",
-        "Arm6",
-        "Arm7A"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "Scene",
-        "Base",
-        "Arm1"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
         "RoboticArm1",
-        "Base"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "Scene",
         "Base",
         "Arm1",
         "Arm2"
@@ -314,17 +388,7 @@
       [
         "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
         "Root",
-        "RAG_SM_Main_RobotArm_v01",
-        "Base"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "RoboticArm1",
+        "RoboticArm0_1",
         "Base",
         "Arm1",
         "Arm2",
@@ -339,43 +403,7 @@
       [
         "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
         "Root",
-        "RoboticArm1",
-        "Base",
-        "Arm1",
-        "Arm2",
-        "Arm3",
-        "Arm4"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "RoboticArm1",
-        "Base",
-        "Arm1",
-        "Arm2"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "Scene",
-        "Base"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "Scene",
+        "RAG_SM_Main_RobotArm_v01",
         "Base",
         "Arm1",
         "Arm2",
@@ -398,6 +426,48 @@
         "Arm2",
         "Arm3",
         "Arm4"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "RAG_SM_Main_RobotArm_v01",
+        "Base",
+        "Arm1",
+        "Arm2",
+        "Arm3",
+        "Arm4"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "RoboticArm0_1",
+        "Base",
+        "Arm1",
+        "Arm2"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "RoboticArm0_1",
+        "Base",
+        "Arm1",
+        "Arm2",
+        "Arm3",
+        "Arm4",
+        "Arm5",
+        "Arm6"
       ],
       {
         "isExpanded" : true,
